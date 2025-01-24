@@ -57,18 +57,7 @@ ChatMte is a way for two and more people to communicate in a fun and easy way. U
 
 | AP-№ | Deadline | Responsible | Description | Planned Time |
 |------|----------|-------------|-------------|--------------|
-| 1.A     |   15.11.2024       |  Samuel                |  Set up a functional front / back end program            |   180'              |
-| 1.B     |   15.11.2024       |  Samuel / Lorenzo                | Implement the function inside of the HTML/ CSS and JS to enable the user to search for a specific city             |  120'               |
-| 2.A     |   15.11.2024      |  Samuel                |  Search for a proper weatehr api that is free and suitable for our webpage            |  30'             |
-| 2.B     |   15.11.2024       |  Samuel                |  Implement the api inside of our back end and test it with Postman or SWAGGER            |  60'              |
-| 3.A     |   22.11.2024       |  Lorenzo                |  Make the css responsive by using % instead of and other methods            |  60'               |
-| 4.A     |   22.11.2024        |  Lorenzo / Samuel                |  Study the layout of other weather apps and try to take inspirationn from them            |  30'               |
-| 4.B     |   22.11.2024        |  Lorenzo / Samuel               |  Implement them inside of the HTML and CSS, also the JS to be able to display the data properly            |  120'               |
-| 5.A     |   29.11.2024       |  Samuel                |  Find out the best way to store data, either through json local storage or through a DB           |  60'               |
-| 5.B     |   29.11.2024       |  Lorenzo               |  Implement the inside of the JS logic            |  120'              |
-| 6.A     |   13.12.2024       |  Samuel               |  Set up a docker container through node.js            |  120'              |
-| 7.A     |   13.12.2024       |  Lorenzo                |  Create a docker file and a docker-compose.yml            |  120'              |
-| 8.A     |   13.12.2024       |  Samuel / Lorenzo               |  Push export the docker image to DockerHub            |  60'              |
+| 1.A  |  24.01.2025  |             |             |              |
 
 ## 3. Implementation
 
