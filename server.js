@@ -1,56 +1,53 @@
-const express = require("express");
-const http = require("http");
-const { Server } = require("socket.io");
-const path = require("path");
+const socket = io(); // Connect to the Socket.io server
 
-const app = express();
-const server = http.createServer(app);
-const io = new Server(server);
+// DOM Elements
+const usernameContainer = document.getElementById("username-container");
+const chatContainer = document.getElementById("chat-container");
+const usernameInput = document.getElementById("username");
+const chatWindow = document.getElementById("chat-window");
+const chatMessageInput = document.getElementById("chat-message");
 
-const PORT = process.env.PORT || 3000;
+// Save Username and Join Chat
+function saveAndJoin() {
+  const username = usernameInput.value.trim();
+  if (username.length < 3) {
+    alert("Username must be at least 3 characters long.");
+    return;
+  }
 
-// List of prohibited words
-const swearWords = ["Fuck", "Shit"]; // Replace with actual swear words
+  // Hide username container and show chat container
+  usernameContainer.style.display = "none";
+  chatContainer.style.display = "block";
 
-// In-memory chat history
-const chatHistory = [];
-
-// Serve static files from the frontend
-app.use(express.static(path.join(__dirname, "public")));
-
-// Socket.io logic for real-time communication
-io.on("connection", (socket) => {
-  console.log("A user connected:", socket.id);
-
-  // Send previous chat history to the newly connected user
-  socket.emit("chat history", chatHistory);
-
-  // Listen for username validation
-  socket.on("validate username", (username, callback) => {
-    const isInvalid =
-      username.length < 3 ||
-      swearWords.some((word) => username.toLowerCase().includes(word));
-
-    if (isInvalid) {
-      callback({ success: false, message: "Invalid username." });
-    } else {
-      callback({ success: true });
+  // Emit username to the server
+  socket.emit("validate username", username, (response) => {
+    if (!response.success) {
+      alert(response.message);
+      usernameContainer.style.display = "block";
+      chatContainer.style.display = "none";
     }
   });
+}
 
-  // Broadcast messages to all connected clients
-  socket.on("chat message", (data) => {
-    const formattedMessage = `${data.username}: ${data.message}`;
-    chatHistory.push(formattedMessage); // Store formatted message
-    io.emit("chat message", { username: data.username, message: data.message }); // Send to all clients
-  });
+// Send Chat Message
+function sendMessage() {
+  const message = chatMessageInput.value.trim();
+  if (message) {
+    socket.emit("chat message", { username: usernameInput.value, message });
+    chatMessageInput.value = "";
+  }
+}
 
-  socket.on("disconnect", () => {
-    console.log("User disconnected:", socket.id);
-  });
+// Socket.io Listeners
+socket.on("chat message", (data) => {
+  const messageElement = document.createElement("div");
+  messageElement.textContent = `${data.username}: ${data.message}`;
+  chatWindow.appendChild(messageElement);
 });
 
-// Start the server
-server.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+// Optional: Handle Enter key for sending messages
+chatMessageInput.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    sendMessage();
+  }
 });
