@@ -1,53 +1,42 @@
-const socket = io(); // Connect to the Socket.io server
+const express = require("express");
+const http = require("http");
+const { Server } = require("socket.io");
+const path = require("path");
 
-// DOM Elements
-const usernameContainer = document.getElementById("username-container");
-const chatContainer = document.getElementById("chat-container");
-const usernameInput = document.getElementById("username");
-const chatWindow = document.getElementById("chat-window");
-const chatMessageInput = document.getElementById("chat-message");
+const app = express();
+const server = http.createServer(app);
+const io = new Server(server);
 
-// Save Username and Join Chat
-function saveAndJoin() {
-  const username = usernameInput.value.trim();
-  if (username.length < 3) {
-    alert("Username must be at least 3 characters long.");
-    return;
-  }
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, "public")));
 
-  // Hide username container and show chat container
-  usernameContainer.style.display = "none";
-  chatContainer.style.display = "block";
+// Socket.io logic
+io.on("connection", (socket) => {
+  console.log("A user connected:", socket.id);
 
-  // Emit username to the server
-  socket.emit("validate username", username, (response) => {
-    if (!response.success) {
-      alert(response.message);
-      usernameContainer.style.display = "block";
-      chatContainer.style.display = "none";
+  // Validate username
+  socket.on("validate username", (username, callback) => {
+    const isInvalid = username.length < 3; // Add additional validation if needed
+    if (isInvalid) {
+      callback({ success: false, message: "Invalid username." });
+    } else {
+      callback({ success: true });
     }
   });
-}
 
-// Send Chat Message
-function sendMessage() {
-  const message = chatMessageInput.value.trim();
-  if (message) {
-    socket.emit("chat message", { username: usernameInput.value, message });
-    chatMessageInput.value = "";
-  }
-}
+  // Handle chat messages
+  socket.on("chat message", (data) => {
+    io.emit("chat message", data); // Broadcast the message to all clients
+  });
 
-// Socket.io Listeners
-socket.on("chat message", (data) => {
-  const messageElement = document.createElement("div");
-  messageElement.textContent = `${data.username}: ${data.message}`;
-  chatWindow.appendChild(messageElement);
+  // Handle user disconnect
+  socket.on("disconnect", () => {
+    console.log("User disconnected:", socket.id);
+  });
 });
 
-// Optional: Handle Enter key for sending messages
-chatMessageInput.addEventListener("keypress", (event) => {
-  if (event.key === "Enter") {
-    sendMessage();
-  }
+// Start the server
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
