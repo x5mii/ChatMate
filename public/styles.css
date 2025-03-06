@@ -26,36 +26,6 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Make sure the ChatMate title doesn't change color */
-.container h1 {
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: white !important; /* Prevent color change */
-}
-
-.input-group,
-.chat-input-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.input-group input,
-.chat-input-group input {
-  flex: 1;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-.chat-container {
-  display: none;
-  flex-direction: column;
-}
-
 .chat-window {
   height: 300px;
   overflow-y: auto;
@@ -64,7 +34,7 @@ body {
   padding: 10px;
   background-color: var(--chat-bg-color);
   color: var(--chat-text-color);
-  margin-bottom: 15px; /* Added spacing below chat window */
+  margin-bottom: 15px;
 }
 
 button {
@@ -76,28 +46,9 @@ button {
   transition: background-color 0.3s;
 }
 
-.input-group button,
-.chat-input-group button {
-  background-color: #007bff;
-  color: white;
-}
-
-.input-group button:hover,
-.chat-input-group button:hover {
-  background-color: #0056b3;
-}
-
-/* Save Chat Button */
 .save-chat-button {
-  padding: 10px 20px;
-  font-size: 16px;
   background-color: #28a745;
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  align-self: center;
   margin: 5%;
 }
 
@@ -105,17 +56,22 @@ button {
   background-color: #1e7e34;
 }
 
-/* Theme Toggle Button */
 #theme-toggle {
   background-color: #ffa500;
   color: white;
-  margin-top: 10px; /* Added spacing above */
+  margin-top: 10px;
 }
 
-/* Fix buttons being too close */
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px; /* Add spacing between buttons */
+.dark-mode {
+  --bg-color: #2c2c2c;
+  --text-color: #f5f5f5;
+  --chat-bg-color: #ffffff;
+  --chat-text-color: #000000;
+}
+
+.light-mode {
+  --bg-color: #f5f5f5;
+  --text-color: #2c2c2c;
+  --chat-bg-color: #2c2c2c;
+  --chat-text-color: #f5f5f5;
 }

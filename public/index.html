@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Username Input Container -->
     <div class="container" id="username-container">
       <h1>ChatMate</h1>
       <div class="input-group">
@@ -16,25 +15,25 @@
       </div>
     </div>
 
-    <!-- Chat Container -->
-    <div class="container chat-container" id="chat-container" style="display: none;">
+    <div
+      class="container chat-container"
+      id="chat-container"
+      style="display: none"
+    >
       <h1>ChatMate</h1>
-
-      <!-- Chat Window -->
       <div class="chat-window" id="chat-window"></div>
-
-      <!-- Chat Input Section -->
       <div class="chat-input-group">
-        <input type="text" id="chat-message" placeholder="Write a message here" />
+        <input
+          type="text"
+          id="chat-message"
+          placeholder="Write a message here"
+        />
         <button onclick="sendMessage()">Send</button>
       </div>
-
-      <!-- Buttons -->
-      <button class="save-chat-button">Save Chat</button>
+      <button class="save-chat-button" onclick="saveChat()">Save Chat</button>
       <button id="theme-toggle">Toggle Dark/Light Mode</button>
     </div>
 
-    <!-- Scripts -->
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
   </body>
