@@ -77,7 +77,7 @@ Use-Case:
 | 5.A  | 29.11.2024         |  Lorenzo & Dorian     |  135'           |  180'               |
 | 5.B  | 29.11.2024         |  Samuel & Alberto     |  180'           |  180'               |
 | 6.A  | 14.03.2025         |  Alle                 |  225            |  270                |
-|
+
 ## 4. Test Report and Evaluation
 
 ### Test Report
