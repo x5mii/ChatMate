@@ -55,6 +55,9 @@ ChatMte is a way for two and more people to communicate in a fun and easy way. U
 
 ![Untitled](https://github.com/user-attachments/assets/356a5c97-4322-4429-b46e-ee0d5130a4b9)
 
+![im](https://github.com/user-attachments/assets/72cc0101-11b9-41a3-84a2-2e35fbb60d91)
+
+
 ## 2. Project Planning
 
 | AP-№ | Deadline | Responsible | Description | Planned Time |
