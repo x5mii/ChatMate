@@ -105,7 +105,7 @@ Our porject was a sucess with only minor adjustments needed, such as the impleme
 
 Overall I would give us a 8.5 out of ten rating for finishing the project and achieving our personal goals.
 
-Here is the link to Samuel's Mahara portfolio: https://portfolio.bbbaden.ch/view/view.php?t=44f0521ba947b66969c2
+Here is the link to Samuel's Mahara portfolio: [https://portfolio.bbbaden.ch/view/view.php?t=44f0521ba947b66969c2](https://portfolio.bbbaden.ch/view/view.php?t=d767941f565c66a2a241)
 
 Here is the link to Lorenzo's Mahara portfolio: https://portfolio.bbbaden.ch/view/view.php?t=208d152146c77e12bd33
 
