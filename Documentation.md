@@ -57,25 +57,32 @@ ChatMte is a way for two and more people to communicate in a fun and easy way. U
 
 | AP-№ | Deadline | Responsible | Description | Planned Time |
 |------|----------|-------------|-------------|--------------|
-| 1.A  |  24.01.2025  |             |             |              |
+| 1.A  |  24.01.2025  | Samuel|Creation Prototyp, Project and Github|120|
+| 2.A  |  31.01.2025  | Alberto| Recreation Prototype in HTML and CSS|90|
+| 2.B  |  31.01.2025  | Lorenzo & Dorian | Initialize Backend and Create Server|45|
+| 3.A  |  21.02.2025  | Samuel | Github Pages Hosting | 45 |
+| 3.B  |  21.02.2025  | Lorenzo & Dorian | Create a functional Chat | 225 |
+| 4.A  |  28.02.2025  | Alberto | Add function to save chat locally | 225 |
+| 4.B  |  28.02.2025  | Samuel  | Add the function for a third user to join and see the previous messages in the chat | 270 |
+| 5.A  |  7.03.2025   | Lorenzo & Dorian | Create a responsive design | 180 |
+| 5.B  |  7.03.2025   | Samuel & Alberto | Add the function for users to choose their own name | 180 |
+| 6.A  |  14.03.2025  | Alle | Backup Zeit und Bugfixing | 225 |
 
 ## 3. Implementation
 
 | AP-№ | Date     | Responsible      | Planned Time | Actual Time     |
 |------|----------|------------------|--------------|-----------------|
-| 1.A  | 15.11.2024         |  Samuel                |  180'            |  300'              |
-| 1.B  | 15.11.2024         |  Samuel / Lorenzo               |  120'            |  180'               |
-| 2.A  | 15.11.2024         |  Samuel                |  30'            |  15'               |
-| 2.B  | 15.11.2024         |  Samuel                |  60'            |  30'               |
-| 3.A  | 22.11.2024         |  Lorenzo                |  60'            |  120'               |
-| 4.A  | 22.11.2024         |  Lorenzo / Samuel                |  30'            |  30'               |
-| 4.B  | 22.11.2024         |  Lorenzo / Samuel                |  120'            |  180'               |
-| 5.A  | 29.11.2024         |  Samuel                |  60'            |  60'               |
-| 5.B  | 29.11.2024         |  Lorenzo                |  120'            |  180'               |
-| 6.A  | 13.12.2024         |  Samuel                |  120'           |  180'               |
-| 7.A  | 13.12.2024         |  Lorenzo                |  120'            |  180'               |
-| 8.A  | 13.12.2024         |  Samuel / Lorenzo                |  60'            |  30'               |
-
+| 1.A  | 24.01.2025         |  Samuel               |  90'            |  90'                |
+| 2.A  | 31.01.2025         |  Alberto              |  90'            |  135'               |
+| 2.B  | 15.11.2024         |  Lorenzo & Dorian     |  45'            |  45'                |
+| 3.A  | 15.11.2024         |  Samuel               |  45'            |  45'                |
+| 3.A  | 22.11.2024         |  Lorenzo & Dorian     |  135'           |  120'               |
+| 4.A  | 22.11.2024         |  Alberto              |  180'           |  135'               |
+| 4.B  | 22.11.2024         |  Samuel               |  225'           |  180'               |
+| 5.A  | 29.11.2024         |  Lorenzo & Dorian     |  135'           |  180'               |
+| 5.B  | 29.11.2024         |  Samuel & Alberto     |  180'           |  180'               |
+| 6.A  | 14.03.2025         |  Alle                 |  225            |  270                |
+|
 ## 4. Test Report and Evaluation
 
 ### Test Report
