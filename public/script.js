@@ -15,17 +15,17 @@ function saveAndJoin() {
     return;
   }
 
-  if (joined) return; // Prevent duplicate requests
+  if (joined) return;
   joined = true;
 
   socket.emit("validate username", username, (response) => {
     if (response.success) {
       usernameContainer.style.display = "none";
       chatContainer.style.display = "block";
-      loadChatHistory(); // Load stored chat
+      loadChatHistory();
     } else {
       alert(response.message);
-      joined = false; // Allow retry
+      joined = false;
     }
   });
 }
