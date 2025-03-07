@@ -4,17 +4,6 @@
 - **Alberto Manser**
 - **Dorian Herzig**
 
-| Date     | Version | Summary                                                                                              |
-|----------|---------|------------------------------------------------------------------------------------------------------|
-| 10.01.2025 | 0.0.0   |   Today we wrote what we wanted to do as a project in the form of a project assesment and started to inform ourselves on what to do.   |
-| 17.01.2025 | 0.0.1   |   We made a Lo-fi prototype and started to create a front end for our project. We also started a server to host the chat in.   |
-| 24.01.2025 | 0.0.2   |   We made good progress on the functionality of the website.   |
-| 10.01.2025 | 0.0.1   |      |
-| 10.01.2025 | 0.0.1   |      |
-| 10.01.2025 | 0.0.1   |      |
-| 10.01.2025 | 0.0.1   |      |
-
-
 ## 1. Project Overview
 
 ### 1.1 ChatMate
