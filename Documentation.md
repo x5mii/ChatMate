@@ -111,3 +111,5 @@ Here is the link to Samuel's Mahara portfolio: [https://portfolio.bbbaden.ch/vie
 Here is the link to Lorenzo's Mahara portfolio: https://portfolio.bbbaden.ch/view/view.php?t=208d152146c77e12bd33
 
 Here is the link to Alberto's Mahara portfolio: https://portfolio.bbbaden.ch/view/view.php?t=bffd5c916a540cac5d5a
+
+Here is the link to Dorian's Mahara portfolio: https://portfolio.bbbaden.ch/view/view.php?t=866c8f4bdc6fb8e99ec8
