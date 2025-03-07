@@ -66,7 +66,7 @@ ChatMte is a way for two and more people to communicate in a fun and easy way. U
 | 4.B  |  28.02.2025  | Samuel  | Add the function for a third user to join and see the previous messages in the chat | 270 |
 | 5.A  |  7.03.2025   | Lorenzo & Dorian | Create a responsive design | 180 |
 | 5.B  |  7.03.2025   | Samuel & Alberto | Add the function for users to choose their own name | 180 |
-| 6.A  |  14.03.2025  | Alle | Backup Zeit und Bugfixing | 225 |
+| 6.A  |  14.03.2025  | Alle | Backup Zeit, Bugfixing und testing | 225 |
 
 ## 3. Implementation
 
