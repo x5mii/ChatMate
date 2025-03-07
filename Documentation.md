@@ -107,6 +107,6 @@ Overall I would give us a 8.5 out of ten rating for finishing the project and ac
 
 Here is the link to Samuel's Mahara portfolio: https://portfolio.bbbaden.ch/view/view.php?t=44f0521ba947b66969c2
 
-Here is the link to Lorenzo's Mahara portfolio: https://portfolio.bbbaden.ch/view/view.php?t=0da58f34214e254eb3be
+Here is the link to Lorenzo's Mahara portfolio: https://portfolio.bbbaden.ch/view/view.php?t=208d152146c77e12bd33
 
 Here is the link to Alberto's Mahara portfolio: https://portfolio.bbbaden.ch/view/view.php?t=bffd5c916a540cac5d5a
